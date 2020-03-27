@@ -22,3 +22,8 @@ body {
 #question1 {
   display: block;
 }
+
+.fa-arrow-left:hover {
+  color: rgb(104, 102, 102);
+  cursor: pointer;
+}
