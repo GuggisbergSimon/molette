@@ -1,3 +1,4 @@
+
 /* 
     ETML
     Auteur : Jeremiah Steiner
@@ -5,7 +6,8 @@
     Description : Script JS pour l'algorithme de choix de la page Urgences du site web.
 */
 
-var way = "1";
+
+let way = "1";
 
 /**
  * permet d'afficher et de cacher des sections
@@ -17,13 +19,11 @@ function showHide(sectionToHide, sectionToShow) {
     document.getElementById("question" + sectionToHide).style.display = "none";
     document.getElementById("question" + sectionToShow).style.display = "block";
     way += "." + sectionToShow;
-
-    console.log(way);
 }
 
 function returnToLastQuestion() {
 
-    waySplit = way.split('.');
+    let waySplit = way.split('.');
 
     document.getElementById("question" + waySplit[waySplit.length - 1]).style.display = "none";
 
@@ -35,6 +35,4 @@ function returnToLastQuestion() {
     way = way.substring(0, way.length-1);
 
     document.getElementById("question" + waySplit[waySplit.length - 2]).style.display = "block";
-
-    console.log(way);
 }
