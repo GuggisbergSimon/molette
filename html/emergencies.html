@@ -72,7 +72,7 @@
 
     <div class="row text-center justify-content-center">
         <div id="question1" class="col-md-10 mb-5 question" style="width: 100%;">
-            <div>
+            <div class="card h-100">
                 <div class="card-body">
                     <h2 class="card-title">La personne est-elle inconsiente ?</h2>
                     <p class="card-text">
@@ -82,8 +82,7 @@
                     </p>
                 </div>
                 <div class="card-footer text-center">
-                    <button type="button" class="btn btn-warning btn-lg p-5 mr-2" onclick="showHide('1', '2')">OUI
-                    </button>
+                    <button type="button" class="btn btn-warning btn-lg p-5 mr-2" onclick="showHide('1', '2')">OUI</button>
                     <button type="button" class="btn btn-danger btn-lg p-5" onclick="showHide('1', '3')">NON</button>
                 </div>
             </div>
@@ -93,18 +92,22 @@
         <div id="question2" class="col-md-10 mb-5 question">
             <div class="card h-100">
                 <div class="card-body">
-                    <h2 class="card-title">La personne respire-t-elle ?</h2>
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        La personne respire-t-elle ?
+                    </h2>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus
                         at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates
-                        quos eligendi labore.</p>
+                        quos eligendi labore.
+                    </p>
+                    
                 </div>
                 <div class="card-footer">
                     <button type="button" class="btn btn-warning btn-lg p-5 mr-2" onclick="showHide('2', '4')">OUI
                     </button>
                     <button type="button" class="btn btn-danger btn-lg p-5 mr-2" onclick="showHide('2', '5')">NON
                     </button>
-                    <button type="button" class="btn btn-secondary btn-lg p-5" onclick="returnToLastQuestion()">RETOUR
-                    </button>
+                    
                 </div>
             </div>
         </div>
@@ -114,18 +117,19 @@
         <div id="question3" class="col-md-10 mb-5 question">
             <div class="card h-100">
                 <div class="card-body">
-                    <h2 class="card-title">La personne saigne ?</h2>
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        La personne saigne ?
+                    </h2>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex
                         numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                        <a href="#" class="btn btn-primary btn-sm">INFOS</a>
                 </div>
                 <div class="card-footer">
-                    <a href="#" class="btn btn-primary btn-lg p-5 mr-2">INFOS</a>
+                    
                     <button type="button" class="btn btn-warning btn-lg p-5 mr-2" onclick="showHide('3', '6')">OUI
                     </button>
                     <button type="button" class="btn btn-danger btn-lg p-5 mr-2" onclick="showHide('3', '7')">NON
-                    </button>
-                    <button type="button" class="btn btn-secondary btn-lg p-5 mr-2" onclick="returnToLastQuestion()">
-                        RETOUR
                     </button>
                 </div>
             </div>
@@ -136,14 +140,14 @@
         <div id="question4" class="col-md-10 mb-5 question">
             <div class="card h-100">
                 <div class="card-body">
-                    <h2 class="card-title">Position PLS préconisée</h2>
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        Position PLS préconisée
+                    </h2>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex
                         numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
                 </div>
                 <div class="card-footer">
-                    <button type="button" class="btn btn-secondary btn-lg p-5 mr-2" onclick="returnToLastQuestion()">
-                        RETOUR
-                    </button>
                 </div>
             </div>
         </div>
@@ -152,7 +156,10 @@
         <div id="question5" class="col-md-10 mb-5 question">
             <div class="card h-100">
                 <div class="card-body">
-                    <h2 class="card-title">Savez-vous faire un massage cardiaque ?</h2>
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        Savez-vous faire un massage cardiaque ?
+                    </h2>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex
                         numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
                 </div>
@@ -160,8 +167,6 @@
                     <button type="button" class="btn btn-warning btn-lg p-5 mr-2" onclick="showHide('5', '7')">OUI
                     </button>
                     <button type="button" class="btn btn-danger btn-lg p-5 mr-2" onclick="showHide('5', '8')">NON
-                    </button>
-                    <button type="button" class="btn btn-secondary btn-lg p-5" onclick="returnToLastQuestion()">RETOUR
                     </button>
                 </div>
             </div>
@@ -171,14 +176,12 @@
         <div id="question6" class="col-md-10 mb-5 question">
             <div class="card h-100">
                 <div class="card-body">
-                    <h2 class="card-title">La blessure est plus grande que la paume de la main et du sang coule beaucoup
-                        ?</h2>
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        La blessure est plus grande que la paume de la main et du sang coule beaucoup ?
+                    </h2>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex
                         numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-                </div>
-                <div class="card-footer">
-                    <button type="button" class="btn btn-secondary btn-lg p-5" onclick="returnToLastQuestion()">RETOUR
-                    </button>
                 </div>
             </div>
         </div>
@@ -187,13 +190,12 @@
         <div id="question7" class="col-md-10 mb-5 question">
             <div class="card h-100">
                 <div class="card-body">
-                    <h2 class="card-title">Massage Cardiaque</h2>
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        Massage Cardiaque
+                    </h2>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex
                         numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-                </div>
-                <div class="card-footer">
-                    <button type="button" class="btn btn-secondary btn-lg p-5" onclick="returnToLastQuestion()">RETOUR
-                    </button>
                 </div>
             </div>
         </div>
@@ -202,13 +204,12 @@
         <div id="question8" class="col-md-10 mb-5 question">
             <div class="card h-100">
                 <div class="card-body">
-                    <h2 class="card-title">Aide au massage cardiaque</h2>
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        Aide au massage cardiaque
+                    </h2>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex
                         numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-                </div>
-                <div class="card-footer">
-                    <button type="button" class="btn btn-secondary btn-lg p-5" onclick="returnToLastQuestion()">RETOUR
-                    </button>
                 </div>
             </div>
         </div>
