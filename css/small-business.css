@@ -27,3 +27,15 @@ body {
   color: rgb(104, 102, 102);
   cursor: pointer;
 }
+
+#centerCard {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #qrCode {
+    width: 100%;
+    height: auto;
+  }
+}
