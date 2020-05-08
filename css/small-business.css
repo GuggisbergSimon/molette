@@ -38,4 +38,24 @@ body {
     width: 100%;
     height: auto;
   }
+
+  #algo {
+    width: 100% !important;
+  }
+
+  #bascule {
+    width: 75% !important;
+  }
+
+  #massage {
+    float: none !important;
+  }
+
+  .btn-danger, .btn-warning {
+    padding: 24px !important;
+  }
+
+  .mainTitle {
+    margin: 12px !important;
+  }
 }
