@@ -51,6 +51,10 @@ body {
     float: none !important;
   }
 
+  #bigButton {
+    margin-bottom: 5px !important;
+  }
+
   .btn-danger, .btn-warning {
     padding: 24px !important;
   }
