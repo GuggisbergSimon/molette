@@ -164,7 +164,7 @@
                         Pose d'un garrot et appel aux secours
                     </h2>
                     <p class="card-text">
-                        Pose d'un garrot et appel 144 si la plaie est un membre.
+                        Pose d'un garrot et appel <a style="text-decoration: none;" href="tel:144">144</a> si la plaie est un membre.
                         <b>
                             Noter l'heure de la pose et serrer jusqu'à l'arrêt du saignement.
                             Ne jamais desserrer.
@@ -223,8 +223,12 @@
                         Brûlure
                     </h2>
                     <p class="card-text">
-                        To be continued...
+                        Sécuriser les lieux, retirer la source de chaleur, le produit, etc
                     </p>
+                </div>
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-warning btn-lg p-5 mr-2" onclick="showHide('8', '12')">Brûlure chimique (produit)</button>
+                    <button type="button" class="btn btn-danger btn-lg p-5" onclick="showHide('8', '13')">Brûlure thermique</button>
                 </div>
             </div>
         </div>
@@ -264,7 +268,7 @@
                         Le patient respire
                     </h2>
                     <p class="card-text">
-                        PLS et appeler le 144
+                        PLS et appeler le <a style="text-decoration: none;" href="tel:144">144</a>
                         [Insérer image]
                     </p>
                 </div>
@@ -281,7 +285,7 @@
                         Ne respire pas
                     </h2>
                     <p class="card-text">
-                        Appeler le 144.
+                        Appeler le <a style="text-decoration: none;" href="tel:144">144</a>
                         Faire chercher un défibrillateur
                         Commencer le message cardiaque 100-120 par minute 5-6 cm de profondeur.
                         Dès arrivée du défibrillateur, déclencher un choc si indiqué puis toutes les 2 minutes.
@@ -289,6 +293,193 @@
                             Masser fort, masser vite.
                         </b>
                         [Insérer image]
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center justify-content-center">
+        <div id="question12" class="col-md-10 mb-5 question">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        Brûlure chimique (produit)
+                    </h2>
+                    <p class="card-text">
+                        Retirer les habits.
+                        Identifier le produit.
+                        Rinçage à l'eau.
+                    </p>
+                </div>
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-warning btn-lg p-5 mr-2" onclick="showHide('12', '14')">Prochaine étape</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center justify-content-center">
+        <div id="question13" class="col-md-10 mb-5 question">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        Brûlure thermique
+                    </h2>
+                    <p class="card-text">
+                        Éteindre ou soustraire la source de chaleur.
+                    </p>
+                </div>
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-warning btn-lg p-5 mr-2" onclick="showHide('13', '14')">Prochaine étape</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center justify-content-center">
+        <div id="question14" class="col-md-10 mb-5 question">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        Taille de la brûlure supérieure à 10% de la surface du corps
+                    </h2>
+                    <p class="card-text">
+                        Mesurer la taille de la main du patient.
+                        La taille d'une main = 1% de la surface corporelle du patient.
+                    </p>
+                </div>
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-warning btn-lg p-5 mr-2" onclick="showHide('14', '15')">OUI</button>
+                    <button type="button" class="btn btn-danger btn-lg p-5" onclick="showHide('14', '16')">NON</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center justify-content-center">
+        <div id="question15" class="col-md-10 mb-5 question">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        Taille de brûlure supérieure à 10% de la surface du corps
+                    </h2>
+                    <p class="card-text">
+                        Appeler le <a style="text-decoration: none;" href="tel:144">144</a>
+                        Ne pas refroidir la brûlure.
+                        Protéger la brûlure avec un pansement sec
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center justify-content-center">
+        <div id="question16" class="col-md-10 mb-5 question">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        Taille de brûlure inférieure à 10% de la surface du corps
+                    </h2>
+                    <p class="card-text">
+                        Refroidir la brûlure sous l'eau à 15°C pendant 15 minutes. 15 cm d'écart ou plus entre le jet d'eau et la brûlure.
+                        Protéger avec un pansement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center justify-content-center">
+        <div id="question17" class="col-md-10 mb-5 question">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        Intoxication
+                    </h2>
+                    <p class="card-text">
+                        Sécuriser les lieux, retirer la source, le produit, etc
+                        Identifier le produit la quantité et la voie d'entrée (bouche, yeux, nez)
+                    </p>
+                </div>
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-warning btn-lg p-5 mr-2" onclick="showHide('17', '18')">Intox. produit chimique</button>
+                    <button type="button" class="btn btn-danger btn-lg p-5" onclick="showHide('17', '21')">Intox alimentaire/allergie</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center justify-content-center">
+        <div id="question18" class="col-md-10 mb-5 question">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        Quelle voie d'entrée ?
+                    </h2>
+                    <p class="card-text">
+                        Intoxication produit chimique, quelle voie d'entrée ?
+                    </p>
+                </div>
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-warning btn-lg p-5 mr-2" onclick="showHide('18', '19')">Bouche/Nez</button>
+                    <button type="button" class="btn btn-danger btn-lg p-5" onclick="showHide('18', '20')">Peau/Yeux</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center justify-content-center">
+        <div id="question19" class="col-md-10 mb-5 question">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        Voie d'entrée par la bouche/nez
+                    </h2>
+                    <p class="card-text">
+                        Appelez le <a style="text-decoration: none;" href="tel:145">145</a>
+                        Suivre les instructions du toxcentrum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center justify-content-center">
+        <div id="question20" class="col-md-10 mb-5 question">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        Voie d'entrée par la peau/yeux
+                    </h2>
+                    <p class="card-text">
+                        Rincer à l'eau claire.
+                        Appeler <a style="text-decoration: none;" href="tel:144">144</a> si besoin.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center justify-content-center">
+        <div id="question21" class="col-md-10 mb-5 question">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        Intox alimentaire ou allergie
+                    </h2>
+                    <p class="card-text">
+                        Appeler le <a style="text-decoration: none;" href="tel:144">144</a>
                     </p>
                 </div>
             </div>
