@@ -1,9 +1,9 @@
-<!--
+/*
   Lieu        : ETML
   Auteur      : FIN1 2020
   Date        : 06.03.2020
   Description : Projet pluridisciplinaire
--->
+*/
 
 "use strict";
 
