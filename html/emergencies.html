@@ -1,26 +1,25 @@
 <!--
-    ETML
-    Auteur : Jeremiah Steiner, Ylli Fazlija
-    Date : 06.03.2020
-    Description : page html du projet Infinite
+  Lieu        : ETML
+  Auteur      : FIN1 2020
+  Date        : 06.03.2020
+  Description : Projet pluridisciplinaire
 -->
 
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <title>Urgences</title>
+<html lang="fr-CH">
 
-    <meta charset="utf-8"/>
-    <meta name="author" content="Jeremiah Steiner">
+<head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="FIN1">
+    <link rel="icon" type="image/png" href="../img/favicon.ico">
+
+    <title>Urgences</title>
 
     <script src="../js/app.js"></script>
 
     <!-- Bootstrap core CSS -->
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet"
-          type="text/css">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
@@ -35,7 +34,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#">Projet Infini</a>
+        <a class="navbar-brand" href="home.html">Projet Infini</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -48,12 +47,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="numbers.html">Numéros</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="briefcase.html">Malette</a>
-                </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="emergencies.html">Urgences
                         <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="briefcase.html">Malette</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="security.html">Fiches de sécurité</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="qrcode.html">Code QR</a>
@@ -77,142 +79,217 @@
         <div id="question1" class="col-md-10 mb-5 question" style="width: 100%;">
             <div class="card h-100">
                 <div class="card-body">
-                    <h2 class="card-title">La personne est-elle inconsiente ?</h2>
+                    <h2 class="card-title">Saigne-t-il ?</h2>
                     <p class="card-text">
-                        Vérifier Si la victime réagit :
-                        Appeler, toucher et si pas de réaction frotter le sternum ou pincer la peau en dessus du coude
-                        derrière du bras
+                        Sécuriser les lieux puis évaluer l'état du patient.
+                        Saigne-t-il ?
                     </p>
                 </div>
                 <div class="card-footer text-center">
                     <button type="button" class="btn btn-warning btn-lg p-5 mr-2" onclick="showHide('1', '2')">OUI</button>
-                    <button type="button" class="btn btn-danger btn-lg p-5" onclick="showHide('1', '3')">NON</button>
+                    <button type="button" class="btn btn-danger btn-lg p-5" onclick="showHide('1', '7')">NON</button>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="row text-center justify-content-center">
         <div id="question2" class="col-md-10 mb-5 question">
             <div class="card h-100">
                 <div class="card-body">
                     <h2 class="card-title">
                         <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
-                        La personne respire-t-elle ?
+                        Quel type d'hémorragie ?
                     </h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus
-                        at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates
-                        quos eligendi labore.
+                    <p class="card-text">
+                        Hémorragie massive : section d'un membre, section d'un doigt, plaie profonde
+                        Hémorragie simple : petites coupures
                     </p>
-                    
                 </div>
                 <div class="card-footer">
-                    <button type="button" class="btn btn-warning btn-lg p-5 mr-2" onclick="showHide('2', '4')">OUI
+                    <button type="button" class="btn btn-warning btn-lg p-5 mr-2" onclick="showHide('2', '3')">Massive
                     </button>
-                    <button type="button" class="btn btn-danger btn-lg p-5 mr-2" onclick="showHide('2', '5')">NON
+                    <button type="button" class="btn btn-danger btn-lg p-5 mr-2" onclick="showHide('2', '6')">Simple
                     </button>
-                    
                 </div>
             </div>
         </div>
     </div>
-    <!-- /.col-md-4 -->
+
     <div class="row text-center justify-content-center">
         <div id="question3" class="col-md-10 mb-5 question">
             <div class="card h-100">
                 <div class="card-body">
                     <h2 class="card-title">
                         <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
-                        La personne saigne ?
+                        Hémorragie maîtrisée ?
                     </h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex
-                        numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-                        <a href="#" class="btn btn-primary btn-sm">INFOS</a>
+                    <p class="card-text">
+                        Comprimer la plaie avec une grande compresse absorbante. L'hémorragie est-elle maîtrisée ?
+                        [Insérer image]
+                    </p>
                 </div>
                 <div class="card-footer">
-                    
-                    <button type="button" class="btn btn-warning btn-lg p-5 mr-2" onclick="showHide('3', '6')">OUI
+                    <button type="button" class="btn btn-warning btn-lg p-5 mr-2" onclick="showHide('3', '4')">OUI
                     </button>
-                    <button type="button" class="btn btn-danger btn-lg p-5 mr-2" onclick="showHide('3', '7')">NON
+                    <button type="button" class="btn btn-danger btn-lg p-5 mr-2" onclick="showHide('3', '5')">NON
                     </button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- /.col-md-4 -->
+
     <div class="row text-center justify-content-center">
         <div id="question4" class="col-md-10 mb-5 question">
             <div class="card h-100">
                 <div class="card-body">
                     <h2 class="card-title">
                         <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
-                        Position PLS préconisée
+                        Pose d'un pansement compressif
                     </h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex
-                        numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-                </div>
-                <div class="card-footer">
+                    <p class="card-text">
+                        [Insérer image]
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="row text-center justify-content-center">
         <div id="question5" class="col-md-10 mb-5 question">
             <div class="card h-100">
                 <div class="card-body">
                     <h2 class="card-title">
                         <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
-                        Savez-vous faire un massage cardiaque ?
+                        Pose d'un garrot et appel aux secours
                     </h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex
-                        numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-                </div>
-                <div class="card-footer">
-                    <button type="button" class="btn btn-warning btn-lg p-5 mr-2" onclick="showHide('5', '7')">OUI
-                    </button>
-                    <button type="button" class="btn btn-danger btn-lg p-5 mr-2" onclick="showHide('5', '8')">NON
-                    </button>
+                    <p class="card-text">
+                        Pose d'un garrot et appel 144 si la plaie est un membre.
+                        <b>
+                            Noter l'heure de la pose et serrer jusqu'à l'arrêt du saignement.
+                            Ne jamais desserrer.
+                        </b>
+                    </p>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=oa6R-wLbaW4" class="btn btn-primary btn-sm">Vidéo de pose d'un garrot</a>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="row text-center justify-content-center">
         <div id="question6" class="col-md-10 mb-5 question">
             <div class="card h-100">
                 <div class="card-body">
                     <h2 class="card-title">
                         <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
-                        La blessure est plus grande que la paume de la main et du sang coule beaucoup ?
+                        Hémorragie simple
                     </h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex
-                        numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                    <p class="card-text">
+                        Nettoyer la plaie avec ibidile et compresse.
+                        Couvrir la plaie avec un sparadrap.
+                        [Insérer image]
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="row text-center justify-content-center">
         <div id="question7" class="col-md-10 mb-5 question">
             <div class="card h-100">
                 <div class="card-body">
                     <h2 class="card-title">
                         <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
-                        Massage Cardiaque
+                        Est-il conscient ?
                     </h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex
-                        numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                    <p class="card-text">
+                        L'appeler, le pincer, le stimuler, ...
+                    </p>
+                </div>
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-warning btn-lg p-5 mr-2" onclick="showHide('7', '8')">OUI</button>
+                    <button type="button" class="btn btn-danger btn-lg p-5" onclick="showHide('7', '9')">NON</button>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="row text-center justify-content-center">
         <div id="question8" class="col-md-10 mb-5 question">
             <div class="card h-100">
                 <div class="card-body">
                     <h2 class="card-title">
                         <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
-                        Aide au massage cardiaque
+                        Brûlure
                     </h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex
-                        numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                    <p class="card-text">
+                        To be continued...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center justify-content-center">
+        <div id="question9" class="col-md-10 mb-5 question">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        Contrôle respiratoire
+                    </h2>
+                    <p class="card-text">
+                        S'approcher du patient, basculer légérement la tête en arrière, écouter si bruit de respiration, regarder si mouvement du thorax.
+                        Le patient respire-t-il ?
+                        <b>
+                            Si objets dans la bouche, les retirer.
+                        </b>
+                        [Insérer image]
+                    </p>
+                </div>
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-warning btn-lg p-5 mr-2" onclick="showHide('9', '10')">OUI</button>
+                    <button type="button" class="btn btn-danger btn-lg p-5" onclick="showHide('9', '11')">NON</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center justify-content-center">
+        <div id="question10" class="col-md-10 mb-5 question">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        Le patient respire
+                    </h2>
+                    <p class="card-text">
+                        PLS et appeler le 144
+                        [Insérer image]
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center justify-content-center">
+        <div id="question11" class="col-md-10 mb-5 question">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        <i class="fas fa-arrow-left" style="left: 2%; position: absolute;" onclick="returnToLastQuestion()"></i>
+                        Ne respire pas
+                    </h2>
+                    <p class="card-text">
+                        Appeler le 144.
+                        Faire chercher un défibrillateur
+                        Commencer le message cardiaque 100-120 par minute 5-6 cm de profondeur.
+                        Dès arrivée du défibrillateur, déclencher un choc si indiqué puis toutes les 2 minutes.
+                        <b>
+                            Masser fort, masser vite.
+                        </b>
+                        [Insérer image]
+                    </p>
                 </div>
             </div>
         </div>
@@ -229,7 +306,9 @@
 </footer>
 
 <!-- Bootstrap core JavaScript -->
-<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 </html>

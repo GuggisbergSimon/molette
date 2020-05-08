@@ -1,9 +1,10 @@
-/* 
-    ETML
-    Auteur : Jeremiah Steiner
-    Date : 06.03.2020
-    Description : Script JS pour l'algorithme de choix de la page Urgences du site web.
+/*
+  Lieu        : ETML
+  Auteur      : FIN1 2020
+  Date        : 06.03.2020
+  Description : Projet pluridisciplinaire
 */
+
 "use strict";
 
 let way = "1";

@@ -14,11 +14,13 @@
     <meta name="author" content="FIN1">
     <link rel="icon" type="image/png" href="../img/favicon.ico">
 
-    <title>Code QR</title>
+    <title>Ma Malette</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
     <link href="../css/small-business.css" rel="stylesheet">
@@ -50,48 +52,65 @@
                 <li class="nav-item">
                     <a class="nav-link" href="briefcase.html">Malette</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="security.html">Fiches de sécurité</a>
-                </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="qrcode.html">Code QR
+                    <a class="nav-link" href="security.html">Fiches de sécurité
                         <span class="sr-only">(current)</span>
                     </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="qrcode.html">Code QR</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<div class="my-5 text-center">
-    <div class="card-body">
-            <h1 class="text-danger m-0 font-weight-bold">CODE QR</h1>
-    </div>
-</div>
+<!-- Page Content -->
+<div class="container mb-5">
 
-<div class ="card h-100 col-md-4 mb-1" id="centerCard">
-    <div class="py-1 text-center">
-        <p class="m-0">Vous pouvez trouver ci-dessous le code QR pointant sur la page d'accueil de ce site web.<br>Il est aussi possible de télécharger la version PDF et la version JPG avec les boutons ci-dessous.</p>
-    </div>
-    <div class="row">
-        <div class="my-3 col-md-6 text-center">
-            <a href="../docs/qrcode.pdf" download="QR_CODE.pdf">
-                <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-file-pdf"></i> PDF</button>
-            </a>
-        </div>
-        <div class="my-3 col-md-6 text-center">
-            <a href="../img/qrcode.jpg" download="QR_CODE.jpg">
-                <button type="button" class="btn btn-lg btn-outline-primary"><i class="fas fa-file-image"></i> JPG</button>
-            </a>
+    <!-- Call to Action Well -->
+    <div class="my-5 text-center">
+        <div class="card-body">
+            <h1 class="text-danger m-0 font-weight-bold">PRODUITS DE NETTOYAGE ET DE LESSIVE</h1>
         </div>
     </div>
-</div>
 
-<div class="py-1 text-center">
-    <div class="card-body">
-        <img id="qrCode" src="../img/qrcode.jpg" alt="Code QR pointant sur ce site web.">
-    </div>
+    <table class="table table-striped table-bordered mt-5 mb-5 datatable" style="width:100%">
+        <thead>
+        <tr>
+            <th>Nom de produit</th>
+            <th>Fiche de sécurité</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>AXAT SUPER SILEX</td>
+            <td><a href="../docs/CH-FR-101161E-PERCO PLUS.pdf" target="blank">CH-FR-115404E-TAXAT SUPER SILEX.pdf</a></td>
+        </tr>
+        <tr>
+            <td>ECOBRITE BLUE SOFT</td>
+            <td><a href="../docs/CH-FR-114014E-ECOBRITE BLUE SOFT.pdf" target="blank">CH-FR-114014E-ECOBRITE BLUE SOFT.pdf</a></td>
+        </tr>
+        <tr>
+            <td>ELTRA 40 EXTRA</td>
+            <td><a href="../docsCH-FR-116358E-ELTRA 40 EXTRA (116358E).pdf" target="blank">CH-FR-116358E-ELTRA 40 EXTRA (116358E).pdf</a></td>
+        </tr>
+        <tr>
+            <td>PERCO PLUS</td>
+            <td><a href="../docs/CH-FR-101161E-PERCO PLUS.pdf" target="blank">CH-FR-101161E-PERCO PLUS.pdf</a></td>
+        </tr>
+        <tr>
+            <td>PURSOL ACTIVE</td>
+            <td><a href="../docs/CH-FR-108426E-PURSOL ACTIVE (EURO-RANGE).pdf" target="blank">CH-FR-108426E-PURSOL ACTIVE (EURO-RANGE).pdf</a></td>
+        </tr>
+        <tr>
+            <td>PURSOL PERFECT</td>
+            <td><a href="../docs/CH-FR-108708E-PURSOL PERFECT.pdf" target="blank">CH-FR-108708E-PURSOL PERFECT.pdf</a></td>
+        </tr>
+        </tbody>
+    </table>
 </div>
+<!-- /.container -->
 
 <!-- Footer -->
 <footer class="py-4 bg-dark">
@@ -102,10 +121,24 @@
 </footer>
 
 <!-- Bootstrap core JavaScript -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+
+<script>
+    $('.datatable').DataTable({
+        "paging": false,
+        "info": false,
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/French.json"
+        }
+    });
+</script>
 
 </body>
+
 </html>
